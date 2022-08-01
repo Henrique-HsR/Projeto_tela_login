@@ -23,7 +23,7 @@
 
 body {
     background: var(--bg);
-    color: var(--cor1);
+    color: var(--cor4);
     font-weight: 500;
     display: flex;
     min-height: 100vh;
@@ -110,7 +110,7 @@ main form input {
     padding: 0 0.5rem;
     margin-top: 1rem;
     outline: none;
-    color: var(--cor6);
+    color: var(--cor5);
     font-size: 1rem;
     border: 1px solid #040b18;
     border-radius: 8px;
