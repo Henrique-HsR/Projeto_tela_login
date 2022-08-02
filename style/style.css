@@ -145,7 +145,7 @@ body * {
     background: var(--cor1);
 }
 
-@media only screen and (max-width:950px){
+@media only screen and (max-width:920px){
     .card-login{
         width: 90%;
     }
@@ -166,14 +166,25 @@ body * {
     }
 
     .left-login-img {
-        width: 50vw;
+        width: 60vw;
     }
 
     .right-login{
-        min-width: 60%;
+        width: 70vw;
     }
 
     .card-login {
-        width: 100%;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .left-login {
+        display: none;
+        visibility: hidden;
+    }
+
+    .right-login {
+        width: 80vw;
     }
 }
