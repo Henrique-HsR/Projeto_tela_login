@@ -27,6 +27,7 @@ body {
     font-weight: 500;
     display: flex;
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 main {
@@ -146,15 +147,15 @@ main span a:hover {
 }
 
 section.images{
+    width: 50vw;
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
     padding: 4rem;
 }
 
 section.images img {
-    max-width: 90%;
-    min-width: 20rem;
-    height: auto;
+    max-width: 100%;
 }
 
 section.images .circle {
@@ -168,18 +169,36 @@ section.images .circle {
     z-index: -1;
 }
 
-@media only screen and (max-width:900px) {
-    main {
-        width: 80%;
-        margin-left: 20px;
+@media only screen and (min-width:900px) and (max-width: 1200px) {
+    section.images img {
+        width: 110%;
+    }
+
+    section.images .circle {
+        clip-path: circle(35% at right 80%);
     }
 }
 
-@media only screen and (max-width:650px) {
+@media only screen and (max-width:900px) {
     main{
-        width: 100%;
+        width: 100vw;
     }
     section.images {
         display: none;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main .alternative span {
+        font-size: 0.8rem;
+    }
+
+    main form label span, main form input[type="submit"]{
+        font-size: 1rem;
     }
 }
